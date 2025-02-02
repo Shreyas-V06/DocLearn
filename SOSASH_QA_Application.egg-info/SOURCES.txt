@@ -1,8 +1,8 @@
 setup.py
-QAWithPDF/__init__.py
-QAWithPDF/data_ingestion.py
-QAWithPDF/embedding.py
-QAWithPDF/model_api.py
+DocChat/__init__.py
+DocChat/data_ingestion.py
+DocChat/embedding.py
+DocChat/model_api.py
 SOSASH_QA_Application.egg-info/PKG-INFO
 SOSASH_QA_Application.egg-info/SOURCES.txt
 SOSASH_QA_Application.egg-info/dependency_links.txt
