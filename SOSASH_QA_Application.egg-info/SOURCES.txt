@@ -1,0 +1,9 @@
+setup.py
+QAWithPDF/__init__.py
+QAWithPDF/data_ingestion.py
+QAWithPDF/embedding.py
+QAWithPDF/model_api.py
+SOSASH_QA_Application.egg-info/PKG-INFO
+SOSASH_QA_Application.egg-info/SOURCES.txt
+SOSASH_QA_Application.egg-info/dependency_links.txt
+SOSASH_QA_Application.egg-info/top_level.txt
