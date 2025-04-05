@@ -10,7 +10,6 @@ Tired of scrolling through entire PDFs like a caveman? Want to squeeze answers o
 
 
 ## 🧠 Chain Architecture
-![alt text](image.png)
 
 RAG-based architecture using:  
 - 🧾 **LangChain Loaders**: To load PDF/text 
