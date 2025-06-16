@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>DocLearn</title>
+    <link href="main.css" rel="stylesheet" >
+</head>
+
+ <body>
+    <div class="header">
+        <a href=index.html class="heading">Doc<span>Learn</span></a>
+    </div>
+
+    <div class="hero">
+        <div class="image_section">
+            <div class="file_upload">
+                <h3>Upload a PDF/TXT file</h3>
+                <label for="pdfUpload" class="custom-file-upload">
+                    Upload
+                </label>
+                <input type="file" id="pdfUpload" accept=".pdf,.txt" />
+            </div>
+            <img src="media/astronaut.jpg" height="300px"alt="astronaut">  
+        </div>
+
+        <div class="main_section">
+            <div class="question_box">
+                <h3>Your Question</h3>
+                <input type="text" id="questionBox" placeholder="Ask your question">
+                <button id="sendBtn" type="button">Ask</button>  
+            </div>
+
+            <div class="response_box">
+                <h3>DocLearn says</h3>
+                <pre id="answer"></pre>
+            </div>
+        </div>
+    </div>    <script src="main.js"></script>
+ </body>
+</html>
