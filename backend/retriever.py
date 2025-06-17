@@ -4,8 +4,8 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain.chains.retrieval import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
-from initialize_model import initialize_geminiLLM
-from loaders import LoadPrompt
+from backend.initialize_model import initialize_geminiLLM
+from backend.loaders import LoadPrompt
 
 
 def initialize_retriever(docs):

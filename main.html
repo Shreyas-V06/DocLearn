@@ -11,29 +11,31 @@
     </div>
 
     <div class="hero">
-        <div class="image_section">
-            <div class="file_upload">
-                <h3>Upload a PDF/TXT file</h3>
-                <label for="pdfUpload" class="custom-file-upload">
-                    Upload
-                </label>
-                <input type="file" id="pdfUpload" accept=".pdf,.txt" />
-            </div>
-            <img src="media/astronaut.jpg" height="300px"alt="astronaut">  
-        </div>
+      <div class="image_section">
+    <div class="file_upload">
+        <h3>Upload a PDF/TXT file</h3>
+        <label for="uploaded_file" class="custom-file-upload" id="upload-btn">
+            Upload
+        </label>
+        <input type="file" id="uploaded_file" accept=".pdf,.txt" />
+        <p id="file-status" style="margin-top: 10px; color: #00cc66;"></p>
+    </div>
+    <img src="media/astronaut.jpg" height="300px" alt="astronaut">  
+</div>
+
 
         <div class="main_section">
             <div class="question_box">
                 <h3>Your Question</h3>
-                <input type="text" id="questionBox" placeholder="Ask your question">
-                <button id="sendBtn" type="button">Ask</button>  
+                <input type="text" id="user_question" placeholder="Ask your question">
+                <button id="sendBtn" type="button" onclick="query_file()">Ask</button>  
             </div>
 
             <div class="response_box">
                 <h3>DocLearn says</h3>
-                <pre id="answer"></pre>
+                <pre id="answer_box"></pre>
             </div>
         </div>
-    </div>    <script src="main.js"></script>
+    </div>    <script src="script.js"></script>
  </body>
 </html>

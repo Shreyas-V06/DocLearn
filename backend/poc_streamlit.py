@@ -1,12 +1,7 @@
 import streamlit as st
-from modelInitializer import InitializeGeminiLLM
-from combineDocument import CreateStuffDocChain
-from dataIngestion import LoadPDFDocument,LoadTextDocument
-from embeddings import StoreEmbeddings
-from prompt import LoadPrompt
-from splitter import SplitDocument
-from retrivalChain import LoadRetrievalChain
 import tempfile
+from backend.loaders import LoadPDFDocument,LoadTextDocument
+from retriever import initialize_retriever
 
 st.set_page_config(
         page_title="DocLearn",
@@ -52,7 +47,6 @@ st.markdown("""
 st.markdown("<h1 style='color: #FAFAFA;'>📚 DocLearn</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='color: #C2C2C2;'> RAG Powered QA system</h3>", unsafe_allow_html=True)
 
-LLM = InitializeGeminiLLM()
 
 
 uploaded_file = st.file_uploader("Upload a PDF or TXT file", type=["pdf", "txt"])
@@ -71,15 +65,10 @@ if uploaded_file:
     else:
         st.write("Invalid File type")
 
-    
-    chunks = SplitDocument(docs)
-    VectorDB = StoreEmbeddings(chunks)
-    prompt = LoadPrompt()
-    document_chain = CreateStuffDocChain(LLM, prompt)
-    retrieval_chain = LoadRetrievalChain(VectorDB, document_chain)
+    retriever=initialize_retriever(docs)
     user_question = st.text_input("Ask your question about the document")
 
     if user_question:
         with st.spinner("Analyzing document... 🤖"):
-            response = retrieval_chain.invoke({"input": user_question})
+            response = retriever.invoke({"input": user_question})
             st.markdown(response['answer'])
