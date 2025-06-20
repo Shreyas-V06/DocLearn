@@ -35,7 +35,6 @@ Built this so I could actually understand it without pretending.
 
 ## 🛠️ Tech Stack
 - **LangChain**  
-- **Streamlit**  
 - **FAISS**  
 - **Gemini 1.5 pro (via Google Generative AI SDK)**  
 

@@ -31,4 +31,6 @@ def query_file(user_question:str=Form(...),uploaded_file:UploadFile=File(...)):
     return {"answer":response['answer']}
 
         
-    
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("backend.main:app", host="0.0.0.0", port=8000)
