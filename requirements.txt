@@ -5,3 +5,5 @@ langchain_google_genai
 google-generativeai
 faiss-cpu
 fastapi
+pypdf
+uvicorn
