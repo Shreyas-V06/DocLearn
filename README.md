@@ -4,6 +4,9 @@
 Tired of scrolling through entire PDFs like a caveman? Want to squeeze answers out of your boring documents like it's ChatGPT's job (because it literally is)?  
 **DocLearn** turns your PDFs or text files into a Q&A machine using the magic of **RAG (Retrieval-Augmented Generation)**  so you can ask intelligent questions without doing intelligent work.
 
+**Try out the app**
+-[https://doclearn-sv.vercel.app](https://doclearn-sv.vercel.app)
+
 ---
 
 
@@ -29,14 +32,15 @@ RAG-based architecture using:
 ---
 
 ## 🤡 Why This Exists?
-Built this so I could actually understand it without pretending.
+Built this so I could actually understand langchain.
 
 ---
 
 ## 🛠️ Tech Stack
 - **LangChain**  
 - **FAISS**  
-- **Gemini 1.5 pro (via Google Generative AI SDK)**  
+- **Gemini 2.0 flash (via Google Generative AI SDK)**  
+- **HTML-CSS-JS**
 
 ---
 
