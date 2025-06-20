@@ -32,7 +32,7 @@ async function query_file()
     try
     {   console.log("ready to await")
         answer_box.textContent="Thinking..."
-        let iresponse=await fetch("http://localhost:8000/uploadfile", 
+        let iresponse=await fetch("https://doclearn-backend-sv.onrender.com/uploadfile", 
             {
                 method:'POST',
                 body: form
