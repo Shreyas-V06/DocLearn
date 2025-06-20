@@ -7,3 +7,4 @@ faiss-cpu
 fastapi
 pypdf
 uvicorn
+python-multipart
